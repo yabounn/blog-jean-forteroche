@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^$ public/ [L]
+RewriteRule ^([a-zA-Z]+)/?([a-zA-Z]+)?/?([a-zA-Z0-9]+)?/?$ public/index.php?controller=$1&action=$2&id=$3 [NC,QSA,L]
+
