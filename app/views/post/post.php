@@ -15,6 +15,7 @@
             </section>
         </article>
         <hr>
+        
         <!-- Fil de commentaires -->
         <h4 class="postComment">Commentaires</h4>
           <?php foreach ($comments as $comment): ?>

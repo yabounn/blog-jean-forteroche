@@ -7,7 +7,7 @@ $(document).ready(function(){
     $('#commentId').val($(this).data('comment-id'));
   });
 
-  // Validation du signalement
+  // Envoie d'un signalement
   $('.submit-reporting').click(function(e) {
     e.preventDefault();
     var commentId = $('#commentId').val();

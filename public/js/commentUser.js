@@ -12,7 +12,7 @@ $(document).ready(function(){
       url: 'post/addComment/' + postId,
       type: "POST",
       data: dataString,
-
+      dataType: "json",
       success: function(){
         // console.log('Hello');
         // console.log(dataString);
